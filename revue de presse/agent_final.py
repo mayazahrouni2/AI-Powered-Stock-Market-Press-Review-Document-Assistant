@@ -32,7 +32,7 @@ from datetime import datetime, timedelta   # 🔥 pour les dates
 import sys
 import os
 
-temp_path = r'C:\Users\hp\AppData\Local\Temp\.newspaper_scraper\article_resources'
+temp_path = r'..'
 os.makedirs(temp_path, exist_ok=True)
 
 # ✅ Si on tourne depuis l'exécutable PyInstaller, redirige newspaper vers les ressources packagées
@@ -589,44 +589,13 @@ def obtenir_sites_par_categorie(fichier_csv='Liste des sites à consulter.csv'):
     # Liste par défaut au cas où le CSV est indisponible ou vide
     liste_par_defaut = {
         "Médias Nationaux": [
-            "https://www.ilboursa.com/",
-            "http://www.tustex.com/",
-            "https://www.webmanagercenter.com/",
-            "https://africanmanager.com/categorie/finances/",
-            "https://africanmanager.com/categorie/actualites/",
-            "https://africanmanager.com/categorie/la-une/",
-            "https://www.businessnews.com.tn/dernieres-news",
-            "https://www.businessnews.com.tn/Dossiers",
-            "https://www.leconomistemaghrebin.com/",
-            "https://www.espacemanager.com/",
-            "https://lapresse.tn/",
-            "https://www.entreprises-magazine.com/",
-            "https://universnews.tn/",
-            "https://www.millim.tn/",
-            "https://irbe7.com/",
-            "https://www.challenges.tn/category/economie/bourse/",
-            "https://radioexpressfm.com/fr/",
-            "https://www.leaders.com.tn/",
-            "https://www.tap.info.tn/fr/"
+            ....
         ],
         "Médias Internationaux": [
-            "https://www.lesechos.fr/finance-marches",
-            "https://www.lesechos.fr/bourse",
-            "https://www.lesechos.fr/economie-france",
-            "https://www.boursorama.com/bourse/actualites/marches/",
-            "https://www.boursorama.com/bourse/actualites/finances/",
-            "https://www.latribune.fr/",
-            "https://www.boursorama.com/bourse/actualites/",
-            "https://notreafrik.com/",
-            "https://www.jeuneafrique.com/"
+            .....
         ],
         "Indices Boursiers": [
-            "https://www.bvmt.com.tn",
-            "https://www.boursorama.com/bourse/indices/internationaux",
-            "https://www.investing.com/indices",
-            "https://www.egx.com.eg/ar/EGX_Error.aspx?aspxerrorpath=/ar/Indices.aspx",
-            "https://www.casablanca-bourse.com/fr",
-            "https://countryeconomy.com/stock-exchange"
+          .....
         ]
     }
 
@@ -695,7 +664,7 @@ def sauvegarder_checkpoint(checkpoint, path=CHECKPOINT_FILE):
 def agent():
     global SOCIETES, INTERMEDIAIRES, MOTS_CLES  # <-- global en premier
 
-    base_path = r"C:\Users\hp\Desktop\stage d'ete bourse"
+    base_path = r"..."
     checkpoint_path = os.path.join(base_path, "checkpoint8.json")
     chemin_csv = os.path.join(base_path, "Liste SC & IB & Mots clés.csv")
 
