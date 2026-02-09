@@ -1,0 +1,21 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs & generated files
+*.log
+*.csv
+
+# Documents & media
+*.pdf
+*.docx
+*.mp4
+
+# Generated outputs
+checkpoint*.json
+revues de presse/
+revue de presse/
